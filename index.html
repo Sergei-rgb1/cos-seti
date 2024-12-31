@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои соцсети</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-column {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px rgba(255, 0, 255, 0.5);
+        }
+        .social-buttons a {
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border: none;
+            color: #fff;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .social-buttons a i {
+            margin-right: 10px;
+        }
+        .social-buttons a:hover {
+            transform: scale(1.05);
+        }
+        /* Индивидуальные цвета для кнопок */
+        .vk {
+            background: linear-gradient(45deg, #4c75a3, #3b5998);
+            box-shadow: 0 0 10px #4c75a3, 0 0 20px #3b5998;
+        }
+        .vk:hover {
+            box-shadow: 0 0 20px #4c75a3, 0 0 40px #3b5998;
+        }
+        .telegram {
+            background: linear-gradient(45deg, #0088cc, #32c5f4);
+            box-shadow: 0 0 10px #0088cc, 0 0 20px #32c5f4;
+        }
+        .telegram:hover {
+            box-shadow: 0 0 20px #0088cc, 0 0 40px #32c5f4;
+        }
+        .facebook {
+            background: linear-gradient(45deg, #3b5998, #4267b2);
+            box-shadow: 0 0 10px #3b5998, 0 0 20px #4267b2;
+        }
+        .facebook:hover {
+            box-shadow: 0 0 20px #3b5998, 0 0 40px #4267b2;
+        }
+        .twitter {
+            background: linear-gradient(45deg, #1da1f2, #0d74c2);
+            box-shadow: 0 0 10px #1da1f2, 0 0 20px #0d74c2;
+        }
+        .twitter:hover {
+            box-shadow: 0 0 20px #1da1f2, 0 0 40px #0d74c2;
+        }
+        .instagram {
+            background: linear-gradient(45deg, #f09433, #bc1888);
+            box-shadow: 0 0 10px #f09433, 0 0 20px #bc1888;
+        }
+        .instagram:hover {
+            box-shadow: 0 0 20px #f09433, 0 0 40px #bc1888;
+        }
+        h1, p {
+            text-shadow: 0 0 10px #00f260, 0 0 20px #0575e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Мои соцсети</h1>
+        <p class="text-center mb-4">Подписывайся и будь на связи!</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="social-column">
+                    <div class="social-buttons">
+                        <a href="https://vk.com" class="btn vk" target="_blank">
+                            <i class="fab fa-vk"></i> ВКонтакте
+                        </a>
+                        <a href="https://t.me" class="btn telegram" target="_blank">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                        <a href="https://facebook.com" class="btn facebook" target="_blank">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </a>
+                        <a href="https://twitter.com" class="btn twitter" target="_blank">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="https://instagram.com" class="btn instagram" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+</html>
