@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-column {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 25px rgba(255, 0, 255, 0.5);
+}
+
+
+/* Эффекты наведения */
+.social-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 1;
+}
+
+.social-buttons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Анимация подсветки */
+.social-buttons a:before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.social-buttons a:hover:before {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Клик-прыжок */
+.social-buttons a:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
+
+
+
+.social-buttons a {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.social-buttons a i {
+    margin-right: 10px;
+}
+.social-buttons a:hover {
+    transform: scale(1.05);
+}
+/* Индивидуальные цвета для кнопок */
+.vk {
+    background: linear-gradient(45deg, #4c75a3, #3b5998);
+    box-shadow: 0 0 10px #4c75a3, 0 0 20px #3b5998;
+}
+.vk:hover {
+    box-shadow: 0 0 20px #4c75a3, 0 0 40px #3b5998;
+}
+.telegram {
+    background: linear-gradient(45deg, #0088cc, #32c5f4);
+    box-shadow: 0 0 10px #0088cc, 0 0 20px #32c5f4;
+}
+.telegram:hover {
+    box-shadow: 0 0 20px #0088cc, 0 0 40px #32c5f4;
+}
+.facebook {
+    background: linear-gradient(45deg, #3b5998, #4267b2);
+    box-shadow: 0 0 10px #3b5998, 0 0 20px #4267b2;
+}
+.facebook:hover {
+    box-shadow: 0 0 20px #3b5998, 0 0 40px #4267b2;
+}
+.twitter {
+    background: linear-gradient(45deg, #1da1f2, #0d74c2);
+    box-shadow: 0 0 10px #1da1f2, 0 0 20px #0d74c2;
+}
+.twitter:hover {
+    box-shadow: 0 0 20px #1da1f2, 0 0 40px #0d74c2;
+}
+.instagram {
+    background: linear-gradient(45deg, #f09433, #bc1888);
+    box-shadow: 0 0 10px #f09433, 0 0 20px #bc1888;
+}
+.instagram:hover {
+    box-shadow: 0 0 20px #f09433, 0 0 40px #bc1888;
+}
+    .discord {
+        background: linear-gradient(45deg, #7289da, #4e5d94);
+        box-shadow: 0 0 10px #7289da, 0 0 20px #4e5d94;
+    }
+    .discord:hover {
+        box-shadow: 0 0 20px #7289da, 0 0 40px #4e5d94;
+    }
+    h1, p {
+    text-shadow: 0 0 10px #00f260, 0 0 20px #0575e6;
+}
